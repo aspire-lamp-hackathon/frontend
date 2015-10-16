@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	position: relative;
+}
+
+header {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 10px solid #003366;
+}
+
+hr {
+	height: 10px;
+	background-color: #003366;
+}
+
+.logo img {
+	position: relative;
+	width: 100px;
+	height: 200px;
+}
+
+.search-form {
+	position: relative;
+}
+
+input, label, button {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 95%;
+	margin: 20px;
+}
+
+.gmap {
+	margin-top: -10px;
+}
+
+#googleMap {
+	margin-top: 20px;
+	height: 380px;
+	border: 1px solid black;
+}
