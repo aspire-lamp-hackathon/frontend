@@ -44,12 +44,6 @@ syd.directive('datetimepicker', function() {
 
 /** Controllers **/
 
-syd.controller('LoginCtrl', ['$scope', '$http',
-    function ($scope, $http) {
-		console.log("test")
-	}
-]);
-
 /** End of Controllers **/
 
 /** Routers **/ 
@@ -76,6 +70,8 @@ angular.module('Otd', ['OtdDirectives']);
 /* Controllers */
 function calcRoute(params) {
   var start = params.location;//lat: 13.112416, lng: 80.2716064};
+  console.log(params.location);
+  console.log(params.location2);
   var end = params.location2;//{lat: 12.9112936, lng: 79.9310303};
   var request = {
 	  origin:start,
@@ -89,6 +85,8 @@ function calcRoute(params) {
   });
 } 
 		
+
+
 function initialize()
 {
     directionsDisplay = new google.maps.DirectionsRenderer();
@@ -116,3 +114,4 @@ function SearchForm($scope){
 }
 
 
+google.maps.event.addDomListener(window, 'load', initialize); 
