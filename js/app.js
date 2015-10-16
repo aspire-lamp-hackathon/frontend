@@ -89,8 +89,6 @@ function calcRoute(params) {
   });
 } 
 		
-
-
 function initialize()
 {
     directionsDisplay = new google.maps.DirectionsRenderer();
@@ -118,4 +116,3 @@ function SearchForm($scope){
 }
 
 
-google.maps.event.addDomListener(window, 'load', initialize); 
